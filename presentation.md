@@ -15,17 +15,17 @@ The project aim is to create a virtual representation of a robotic arm using a b
 ## Methodology
 There are various steps involved in creating the Simulator. These steps include 3D Modeling, Rigging, Scripting, Creating a user inteface and finally digital twinning the physical robot with the virtual model.
 
-![Block Diagram](\assets\pics\1.jpg)
+![Block Diagram](https://github.com/Mo-rr-is/Robot-Simulator/blob/main/1.jpg?raw=true)
 
 ### 1. 3D Modeling
 Involves creating a three dimensional representation of the robot using Blender software. The design includes 3 links, 3 joints and an end effector.
 
-![3D Model](\assets\pics\2.jpg)
+![3D Model](https://github.com/Mo-rr-is/Robot-Simulator/blob/main/2.jpg?raw=true)
 
 ### 2. Rigging
 Involves adding control to the model. It defines the range of movement for a model by defining  its actions and movements. Rigging in blender inlvoves the use of armatures that are parented to the robot links and constrained to produce a movement similar to that of a real robot.
 
-![3D Model Rig](\assets\pics\3.jpg)
+![3D Model Rig](https://github.com/Mo-rr-is/Robot-Simulator/blob/main/3.jpg?raw=true)
 
 ### 3. Scripting
 This is the programming part of the simulator which involves designing a forward kinematics algorithm and an inverse kinematics algorithm.
@@ -34,13 +34,13 @@ This is the programming part of the simulator which involves designing a forward
 
 Involves finding the end effector position of the robot given the joint angles. It is essential in our simulator to verify  if the robot arm has reached the desired position. Creating this algorithm involves various steps. Firstly is the drawing of a Kinematic diagram while following the Denavit Hartenberg rules. The second step is to generate a DH parameters table and lastly generate the transformation matrix of consecutive frames and the final transformation matrix of the base frame to the end effector.
 
-![Kinematic Diagram](\assets\pics\4.jpg)
+![Kinematic Diagram](https://github.com/Mo-rr-is/Robot-Simulator/blob/main/4.jpg?raw=true)
 
 *Inverse Kinematics*
 
 Involves calculating the Joint angles of the robot arm needed to achieve a desired end effector position. Given an end effector position (x,y,z) then we can find the joint angles using the equations given.
 
-![Inverse Kinematics equations](\assets\pics\5.jpg)
+![Inverse Kinematics equations](https://github.com/Mo-rr-is/Robot-Simulator/blob/main/5.jpg?raw=true)
 
 ### 4. Conclusion
 Through the creation of this simulator we are able to mirror the behavior of the physical robot given certain constraints. It also enables us to interact with and control the robot arm  with much ease, and provides a much better platform for us to test our robot.
