@@ -15,7 +15,7 @@ The project aim is to create a virtual representation of a robotic arm using a b
 ## Methodology
 There are various steps involved in creating the Simulator. These steps include 3D Modeling, Rigging, Scripting, Creating a user inteface and finally digital twinning the physical robot with the virtual model.
 
-![Block Diagram](\assets\pics\1.jpg)
+![Block Diagram](assets\pics\1.jpg)
 
 ### 1. 3D Modeling
 Involves creating a three dimensional representation of the robot using Blender software. The design includes 3 links, 3 joints and an end effector.
